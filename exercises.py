@@ -107,8 +107,23 @@ print('Exercise 5:', sum_to(10))
 
 def largest(*args):
     sort_arg = sorted(args,reverse=True)
-    print (sort_arg)
+    # print (sort_arg)
     return sort_arg[0]
 
 print('Exercise 6:', largest(1, 2, 3))
 print('Exercise 6:', largest(10, 4, 2))
+
+# Exercise 7: Calculate a Tip
+#
+# Create a function called `calculate_tip`. It should take the bill amount and the tip percentage (as a whole number).
+# The function should return the amount of the tip.
+#
+# Examples:
+# calculate_tip(50, 20) should return 10.
+#
+# Write your function and test its output below.
+
+def calculate_tip(bill,percent):
+    return bill * percent/100
+
+print('Exercise 7:', calculate_tip(50, 20))
